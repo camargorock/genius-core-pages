@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GENIUS v3.6 — Workbook Definitivo</title>
+<title>GENIUS v3.6 â€” Workbook Definitivo</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -28,7 +29,7 @@
 html{scroll-behavior:smooth;}
 body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;overflow-x:hidden;min-height:100vh;}
 
-/* ── GLOBAL BACKGROUND ── */
+/* â”€â”€ GLOBAL BACKGROUND â”€â”€ */
 body::before{content:'';position:fixed;inset:0;
   background:
     radial-gradient(ellipse 100% 70% at 20% -10%, rgba(124,58,237,.15), transparent 60%),
@@ -41,7 +42,7 @@ body::after{content:'';position:fixed;inset:0;
     linear-gradient(90deg, rgba(124,58,237,.04) 1px, transparent 1px);
   background-size:60px 60px;pointer-events:none;z-index:0;opacity:.5;}
 
-/* ── HERO ── */
+/* â”€â”€ HERO â”€â”€ */
 .hero{position:relative;padding:60px 20px 40px;text-align:center;z-index:1;}
 .hero-orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.4;pointer-events:none;}
 .hero-orb.a{width:400px;height:400px;background:var(--v1);top:-100px;left:-100px;}
@@ -72,7 +73,7 @@ body::after{content:'';position:fixed;inset:0;
   -webkit-text-fill-color:transparent;background-clip:text;}
 .hstat .l{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;}
 
-/* ── TABS NAV ── */
+/* â”€â”€ TABS NAV â”€â”€ */
 .tabs-wrap{position:sticky;top:0;z-index:100;padding:12px 0;
   background:rgba(6,6,14,.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);}
 .tabs-scroll{max-width:1300px;margin:0 auto;overflow-x:auto;padding:0 16px;
@@ -87,19 +88,19 @@ body::after{content:'';position:fixed;inset:0;
 .tab.active{color:#fff;background:linear-gradient(135deg,rgba(124,58,237,.25),rgba(6,182,212,.15));
   border-color:rgba(124,58,237,.35);box-shadow:0 0 20px rgba(124,58,237,.15);}
 
-/* ── CONTENT ── */
+/* â”€â”€ CONTENT â”€â”€ */
 .container{max-width:1200px;margin:0 auto;padding:0 20px;position:relative;z-index:1;}
 .panel{display:none;padding:48px 0 60px;animation:fadeIn .4s ease;}
 .panel.active{display:block;}
 @keyframes fadeIn{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
 
-/* ── SECTION TITLE ── */
+/* â”€â”€ SECTION TITLE â”€â”€ */
 .stitle{font-size:1.6rem;font-weight:800;margin-bottom:28px;display:flex;align-items:center;gap:14px;}
 .stitle .icon{font-size:1.3rem;}
 .stitle .line{flex:1;height:1px;background:linear-gradient(90deg,var(--v1),var(--c1),transparent);}
 .stitle2{font-size:1.15rem;font-weight:700;margin:28px 0 14px;color:var(--c2);}
 
-/* ── GLASS CARD ── */
+/* â”€â”€ GLASS CARD â”€â”€ */
 .card{background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:24px;
   backdrop-filter:blur(12px);transition:border-color .2s;}
 .card:hover{border-color:var(--border2);}
@@ -108,7 +109,7 @@ body::after{content:'';position:fixed;inset:0;
 .cols-3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
 .cols-4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}
 
-/* ── GRADIENT CARDS ── */
+/* â”€â”€ GRADIENT CARDS â”€â”€ */
 .gc{border-radius:14px;padding:20px;position:relative;overflow:hidden;}
 .gc::before{content:'';position:absolute;inset:0;
   background:linear-gradient(135deg,rgba(255,255,255,.04),transparent);pointer-events:none;}
@@ -122,7 +123,7 @@ body::after{content:'';position:fixed;inset:0;
 .gc .val{font-size:1.5rem;font-weight:800;}
 .gc .sub{font-size:.8rem;color:var(--muted);margin-top:4px;}
 
-/* ── TABLE ── */
+/* â”€â”€ TABLE â”€â”€ */
 .tw{overflow-x:auto;border-radius:12px;border:1px solid var(--border);}
 table{width:100%;border-collapse:collapse;font-size:.85rem;}
 th{background:rgba(124,58,237,.12);padding:11px 14px;text-align:left;font-size:.72rem;
@@ -131,7 +132,7 @@ td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.03);}
 tr:last-child td{border-bottom:none;}
 tr:hover td{background:rgba(255,255,255,.015);}
 
-/* ── CODE ── */
+/* â”€â”€ CODE â”€â”€ */
 .cb{background:rgba(0,0,0,.45);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:12px 0;}
 .ch{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;
   background:rgba(255,255,255,.025);border-bottom:1px solid var(--border);}
@@ -145,7 +146,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 .kw{color:var(--v3);}.str{color:var(--g3);}.cmt{color:var(--dim);font-style:italic;}
 .fn{color:var(--c3);}.num{color:var(--y3);}.op{color:var(--p2);}
 
-/* ── STATE CARDS ── */
+/* â”€â”€ STATE CARDS â”€â”€ */
 .sg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
 .sc{border-radius:14px;padding:18px;border:1px solid;transition:transform .2s,box-shadow .2s;}
 .sc:hover{transform:translateY(-3px);box-shadow:0 8px 30px rgba(0,0,0,.3);}
@@ -161,7 +162,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 .sr:last-child{border-bottom:none;}
 .sk{color:var(--muted);}.sv{font-weight:600;font-family:var(--mono);font-size:.75rem;}
 
-/* ── FLOW TIMELINE ── */
+/* â”€â”€ FLOW TIMELINE â”€â”€ */
 .flow{display:flex;flex-direction:column;}
 .fi{display:flex;gap:14px;}
 .fl{display:flex;flex-direction:column;align-items:center;}
@@ -172,7 +173,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 .ft h4{font-size:.88rem;font-weight:700;margin-bottom:3px;}
 .ft p{font-size:.78rem;color:var(--muted);}
 
-/* ── ROUTE ROWS ── */
+/* â”€â”€ ROUTE ROWS â”€â”€ */
 .rr{display:grid;grid-template-columns:130px 1fr 1fr;gap:14px;align-items:start;
   padding:14px 18px;border-radius:12px;background:var(--glass);border:1px solid var(--border);
   margin-bottom:8px;transition:background .2s;}
@@ -187,7 +188,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 .rl{font-size:.72rem;color:var(--muted);margin-bottom:3px;text-transform:uppercase;letter-spacing:.5px;}
 .rv{font-size:.82rem;}
 
-/* ── INVARIANT ROWS ── */
+/* â”€â”€ INVARIANT ROWS â”€â”€ */
 .ir{display:flex;gap:14px;align-items:flex-start;padding:14px 18px;border-radius:12px;
   background:var(--glass);border-left:3px solid;margin-bottom:8px;}
 .ir.ok{border-color:var(--g2);}.ir.warn{border-color:var(--y2);}.ir.err{border-color:var(--r2);}
@@ -195,7 +196,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 .ir .it{font-weight:700;font-size:.88rem;margin-bottom:2px;}
 .ir .id{font-size:.8rem;color:var(--muted);}
 
-/* ── TAGS ── */
+/* â”€â”€ TAGS â”€â”€ */
 .tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.7rem;font-weight:600;
   font-family:var(--mono);background:rgba(124,58,237,.12);color:var(--v3);border:1px solid rgba(124,58,237,.2);}
 .tag.c{background:rgba(6,182,212,.12);color:var(--c3);border-color:rgba(6,182,212,.2);}
@@ -203,39 +204,39 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 .tag.y{background:rgba(245,158,11,.12);color:var(--y3);border-color:rgba(245,158,11,.2);}
 .tag.r{background:rgba(239,68,68,.12);color:var(--r3);border-color:rgba(239,68,68,.2);}
 
-/* ── PERF BARS ── */
+/* â”€â”€ PERF BARS â”€â”€ */
 .pb{margin-bottom:10px;}
 .pl{display:flex;justify-content:space-between;font-size:.78rem;margin-bottom:5px;}
 .pt{height:6px;background:rgba(255,255,255,.04);border-radius:3px;overflow:hidden;}
 .pf{height:100%;border-radius:3px;}
 
-/* ── ALERT ── */
+/* â”€â”€ ALERT â”€â”€ */
 .alert{padding:14px 20px;border-radius:12px;font-size:.88rem;display:flex;align-items:center;gap:10px;}
 .alert.r{background:rgba(239,68,68,.08);border:1px solid rgba(239,68,68,.2);color:var(--r3);}
 .alert.g{background:rgba(16,185,129,.08);border:1px solid rgba(16,185,129,.2);color:var(--g3);}
 .alert.y{background:rgba(245,158,11,.08);border:1px solid rgba(245,158,11,.2);color:var(--y3);}
 
-/* ── PIPELINE ASCII ── */
+/* â”€â”€ PIPELINE ASCII â”€â”€ */
 .pipeline-box{background:rgba(0,0,0,.4);border:1px solid var(--border);border-radius:14px;
   padding:24px;overflow-x:auto;font-family:var(--mono);font-size:.72rem;line-height:1.5;
   color:var(--c3);white-space:pre;}
 
-/* ── DIVIDER ── */
+/* â”€â”€ DIVIDER â”€â”€ */
 .divider{height:1px;background:linear-gradient(90deg,transparent,var(--v1),var(--c1),var(--p1),transparent);
   margin:8px 0 0;}
 
-/* ── FOOTER ── */
+/* â”€â”€ FOOTER â”€â”€ */
 .footer{text-align:center;padding:48px 20px;color:var(--muted);font-size:.82rem;
   border-top:1px solid var(--border);position:relative;z-index:1;}
 .footer strong{background:linear-gradient(135deg,var(--v2),var(--c2));
   -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
 
-/* ── SCROLLBAR ── */
+/* â”€â”€ SCROLLBAR â”€â”€ */
 ::-webkit-scrollbar{width:5px;height:5px;}
 ::-webkit-scrollbar-track{background:transparent;}
 ::-webkit-scrollbar-thumb{background:linear-gradient(var(--v1),var(--c1));border-radius:3px;}
 
-/* ── RESPONSIVE ── */
+/* â”€â”€ RESPONSIVE â”€â”€ */
 @media(max-width:768px){
   .cols-2,.cols-3,.cols-4{grid-template-columns:1fr;}
   .rr{grid-template-columns:1fr;gap:8px;}
@@ -243,7 +244,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
   .hero-stats{gap:20px;}
 }
 
-/* ── SEARCH ── */
+/* â”€â”€ SEARCH â”€â”€ */
 .search-wrap{max-width:500px;margin:0 auto 0;position:relative;}
 .search-wrap input{width:100%;padding:10px 18px 10px 40px;border-radius:50px;border:1px solid var(--border);
   background:var(--glass);color:var(--text);font-family:var(--sans);font-size:.85rem;outline:none;
@@ -254,12 +255,12 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 </head>
 <body>
 
-<!-- ═══ HERO ═══ -->
+<!-- â•â•â• HERO â•â•â• -->
 <div class="hero">
   <div class="hero-orb a"></div><div class="hero-orb b"></div><div class="hero-orb c"></div>
-  <div class="hero-badge"><span class="dot"></span> Production Grade · v3.6 · 63 Nós</div>
+  <div class="hero-badge"><span class="dot"></span> Production Grade Â· v3.6 Â· 63 NÃ³s</div>
   <h1>GENIUS AI System</h1>
-  <p class="hero-sub">Workbook Definitivo — Single Source of Truth<br>Atendimento Persuasivo por IA · Arquitetura Orientada a Estado</p>
+  <p class="hero-sub">Workbook Definitivo â€” Single Source of Truth<br>Atendimento Persuasivo por IA Â· Arquitetura Orientada a Estado</p>
   <div class="hero-pills">
     <span class="hpill v">n8n Orchestration</span>
     <span class="hpill c">SQL State Machine</span>
@@ -268,78 +269,78 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
     <span class="hpill p">Redis Buffer</span>
   </div>
   <div class="hero-stats">
-    <div class="hstat"><div class="n">63</div><div class="l">Nós Produção</div></div>
+    <div class="hstat"><div class="n">63</div><div class="l">NÃ³s ProduÃ§Ã£o</div></div>
     <div class="hstat"><div class="n">7</div><div class="l">Rotas</div></div>
     <div class="hstat"><div class="n">4</div><div class="l">Estados</div></div>
-    <div class="hstat"><div class="n">22</div><div class="l">Seções</div></div>
+    <div class="hstat"><div class="n">22</div><div class="l">SeÃ§Ãµes</div></div>
     <div class="hstat"><div class="n">6</div><div class="l">Invariantes</div></div>
   </div>
 </div>
 <div class="divider"></div>
 
-<!-- ═══ TABS ═══ -->
+<!-- â•â•â• TABS â•â•â• -->
 <div class="tabs-wrap">
   <div class="tabs-scroll">
     <div class="tabs" id="tabs">
-      <div class="tab active" data-tab="filosofia">🏛️ Filosofia</div>
-      <div class="tab" data-tab="infra">🏗️ Infra</div>
-      <div class="tab" data-tab="banco">🗄️ Banco</div>
-      <div class="tab" data-tab="estados">🚦 Estados</div>
-      <div class="tab" data-tab="pipeline">🔄 Pipeline</div>
-      <div class="tab" data-tab="adapters">🔌 Adapters</div>
-      <div class="tab" data-tab="code">💻 Code Nodes</div>
-      <div class="tab" data-tab="sql">🗃️ SQL Nodes</div>
-      <div class="tab" data-tab="rotas">🗺️ Rotas</div>
-      <div class="tab" data-tab="checkfail">🔥 Check Fail</div>
-      <div class="tab" data-tab="followup">📡 Follow-Up</div>
-      <div class="tab" data-tab="cron">⏰ Cron</div>
-      <div class="tab" data-tab="redis">⚡ Redis</div>
-      <div class="tab" data-tab="output">📤 Output</div>
-      <div class="tab" data-tab="guardrails">🛡️ Guardrails</div>
-      <div class="tab" data-tab="workbook">📐 Workbook</div>
-      <div class="tab" data-tab="troubleshoot">🔧 Troubleshoot</div>
-      <div class="tab" data-tab="antireg">📋 Anti-Regressão</div>
+      <div class="tab active" data-tab="filosofia">ðŸ›ï¸ Filosofia</div>
+      <div class="tab" data-tab="infra">ðŸ—ï¸ Infra</div>
+      <div class="tab" data-tab="banco">ðŸ—„ï¸ Banco</div>
+      <div class="tab" data-tab="estados">ðŸš¦ Estados</div>
+      <div class="tab" data-tab="pipeline">ðŸ”„ Pipeline</div>
+      <div class="tab" data-tab="adapters">ðŸ”Œ Adapters</div>
+      <div class="tab" data-tab="code">ðŸ’» Code Nodes</div>
+      <div class="tab" data-tab="sql">ðŸ—ƒï¸ SQL Nodes</div>
+      <div class="tab" data-tab="rotas">ðŸ—ºï¸ Rotas</div>
+      <div class="tab" data-tab="checkfail">ðŸ”¥ Check Fail</div>
+      <div class="tab" data-tab="followup">ðŸ“¡ Follow-Up</div>
+      <div class="tab" data-tab="cron">â° Cron</div>
+      <div class="tab" data-tab="redis">âš¡ Redis</div>
+      <div class="tab" data-tab="output">ðŸ“¤ Output</div>
+      <div class="tab" data-tab="guardrails">ðŸ›¡ï¸ Guardrails</div>
+      <div class="tab" data-tab="workbook">ðŸ“ Workbook</div>
+      <div class="tab" data-tab="troubleshoot">ðŸ”§ Troubleshoot</div>
+      <div class="tab" data-tab="antireg">ðŸ“‹ Anti-RegressÃ£o</div>
     </div>
   </div>
 </div>
 
 <div class="container">
 
-<!-- ═══ TAB: FILOSOFIA ═══ -->
+<!-- â•â•â• TAB: FILOSOFIA â•â•â• -->
 <div class="panel active" id="filosofia">
-  <div class="stitle"><span class="icon">🏛️</span> Filosofia & Invariantes <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ›ï¸</span> Filosofia & Invariantes <span class="line"></span></div>
   
   <div class="card-grid cols-3" style="margin-bottom:20px">
-    <div class="gc v"><h3>🧭 Orquestração</h3><div class="val" style="background:linear-gradient(135deg,var(--v3),var(--p2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">n8n orquestra</div><div class="sub">Todo fluxo passa pelo n8n — sem exceção</div></div>
-    <div class="gc c"><h3>🗄️ Estado</h3><div class="val" style="background:linear-gradient(135deg,var(--c3),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent">SQL governa</div><div class="sub">Somente SQL lê e escreve estado</div></div>
-    <div class="gc y"><h3>🤖 Inteligência</h3><div class="val" style="background:linear-gradient(135deg,var(--y3),var(--p2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">LLM gera texto</div><div class="sub">IA nunca decide rota, nunca escreve BD</div></div>
+    <div class="gc v"><h3>ðŸ§­ OrquestraÃ§Ã£o</h3><div class="val" style="background:linear-gradient(135deg,var(--v3),var(--p2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">n8n orquestra</div><div class="sub">Todo fluxo passa pelo n8n â€” sem exceÃ§Ã£o</div></div>
+    <div class="gc c"><h3>ðŸ—„ï¸ Estado</h3><div class="val" style="background:linear-gradient(135deg,var(--c3),var(--g3));-webkit-background-clip:text;-webkit-text-fill-color:transparent">SQL governa</div><div class="sub">Somente SQL lÃª e escreve estado</div></div>
+    <div class="gc y"><h3>ðŸ¤– InteligÃªncia</h3><div class="val" style="background:linear-gradient(135deg,var(--y3),var(--p2));-webkit-background-clip:text;-webkit-text-fill-color:transparent">LLM gera texto</div><div class="sub">IA nunca decide rota, nunca escreve BD</div></div>
   </div>
 
-  <div class="alert r" style="margin-bottom:24px">⚠️ <strong>Violação de qualquer regra = Bug.</strong> O documento é soberano. Sistema e IA se adaptam a ele — nunca o contrário.</div>
+  <div class="alert r" style="margin-bottom:24px">âš ï¸ <strong>ViolaÃ§Ã£o de qualquer regra = Bug.</strong> O documento Ã© soberano. Sistema e IA se adaptam a ele â€” nunca o contrÃ¡rio.</div>
 
-  <div class="stitle2">🔒 6 Invariantes Absolutas</div>
-  <div class="ir ok"><span class="ii">1️⃣</span><div><div class="it">n8n orquestra tudo</div><div class="id">Todo fluxo passa pelo n8n — sem bypasses, sem atalhos</div></div></div>
-  <div class="ir ok"><span class="ii">2️⃣</span><div><div class="it">SQL governa estado</div><div class="id">O banco é a única fonte de verdade de estado</div></div></div>
-  <div class="ir ok"><span class="ii">3️⃣</span><div><div class="it">IA não decide rotas</div><div class="id">LLM só gera texto — nunca escolhe rota</div></div></div>
-  <div class="ir ok"><span class="ii">4️⃣</span><div><div class="it">IA não escreve no banco</div><div class="id">Nunca. Zero exceções. Nem em "modo emergência"</div></div></div>
-  <div class="ir ok"><span class="ii">5️⃣</span><div><div class="it">Adapters são imutáveis</div><div class="id">Schema fixo, sem lógica, sem migração informal</div></div></div>
-  <div class="ir ok"><span class="ii">6️⃣</span><div><div class="it">JSON downstream nunca quebra</div><div class="id">Adapter garante tipos antes de qualquer downstream</div></div></div>
+  <div class="stitle2">ðŸ”’ 6 Invariantes Absolutas</div>
+  <div class="ir ok"><span class="ii">1ï¸âƒ£</span><div><div class="it">n8n orquestra tudo</div><div class="id">Todo fluxo passa pelo n8n â€” sem bypasses, sem atalhos</div></div></div>
+  <div class="ir ok"><span class="ii">2ï¸âƒ£</span><div><div class="it">SQL governa estado</div><div class="id">O banco Ã© a Ãºnica fonte de verdade de estado</div></div></div>
+  <div class="ir ok"><span class="ii">3ï¸âƒ£</span><div><div class="it">IA nÃ£o decide rotas</div><div class="id">LLM sÃ³ gera texto â€” nunca escolhe rota</div></div></div>
+  <div class="ir ok"><span class="ii">4ï¸âƒ£</span><div><div class="it">IA nÃ£o escreve no banco</div><div class="id">Nunca. Zero exceÃ§Ãµes. Nem em "modo emergÃªncia"</div></div></div>
+  <div class="ir ok"><span class="ii">5ï¸âƒ£</span><div><div class="it">Adapters sÃ£o imutÃ¡veis</div><div class="id">Schema fixo, sem lÃ³gica, sem migraÃ§Ã£o informal</div></div></div>
+  <div class="ir ok"><span class="ii">6ï¸âƒ£</span><div><div class="it">JSON downstream nunca quebra</div><div class="id">Adapter garante tipos antes de qualquer downstream</div></div></div>
 
-  <div class="stitle2">🎯 Identidade do Sistema</div>
+  <div class="stitle2">ðŸŽ¯ Identidade do Sistema</div>
   <div class="card" style="margin-bottom:16px">
-    <p style="font-size:.92rem;margin-bottom:12px">O GENIUS <strong>não é um chatbot</strong>. É uma <strong style="color:var(--c2)">máquina de estado</strong> que usa IA como ferramenta de geração de texto.</p>
+    <p style="font-size:.92rem;margin-bottom:12px">O GENIUS <strong>nÃ£o Ã© um chatbot</strong>. Ã‰ uma <strong style="color:var(--c2)">mÃ¡quina de estado</strong> que usa IA como ferramenta de geraÃ§Ã£o de texto.</p>
     <div class="card-grid cols-2" style="gap:10px">
-      <div class="gc g" style="padding:14px"><div class="sub">LLM é fraca, opinativa e descartável</div></div>
-      <div class="gc g" style="padding:14px"><div class="sub">Lógica crítica é 100% determinística</div></div>
-      <div class="gc g" style="padding:14px"><div class="sub">Estado explícito — nunca implícito</div></div>
-      <div class="gc g" style="padding:14px"><div class="sub">Falha previsível > sucesso frágil</div></div>
+      <div class="gc g" style="padding:14px"><div class="sub">LLM Ã© fraca, opinativa e descartÃ¡vel</div></div>
+      <div class="gc g" style="padding:14px"><div class="sub">LÃ³gica crÃ­tica Ã© 100% determinÃ­stica</div></div>
+      <div class="gc g" style="padding:14px"><div class="sub">Estado explÃ­cito â€” nunca implÃ­cito</div></div>
+      <div class="gc g" style="padding:14px"><div class="sub">Falha previsÃ­vel > sucesso frÃ¡gil</div></div>
     </div>
   </div>
 </div>
 
-<!-- ═══ TAB: INFRA ═══ -->
+<!-- â•â•â• TAB: INFRA â•â•â• -->
 <div class="panel" id="infra">
-  <div class="stitle"><span class="icon">🏗️</span> Infraestrutura <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ—ï¸</span> Infraestrutura <span class="line"></span></div>
   <div class="card-grid cols-2">
     <div class="card">
       <div style="font-size:.75rem;text-transform:uppercase;letter-spacing:1px;color:var(--v2);font-weight:700;margin-bottom:14px">Endpoints</div>
@@ -348,7 +349,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
         <tr><td>n8n</td><td><code style="color:var(--c3);font-size:.78rem">n8n-n8n.l6josh.easypanel.host</code></td></tr>
         <tr><td>Evolution API</td><td><code style="color:var(--c3);font-size:.78rem">n8n-evolution-api.l6josh.easypanel.host</code></td></tr>
         <tr><td>Supabase</td><td><code style="color:var(--c3);font-size:.78rem">dupcanuaaawhhispqtjg</code></td></tr>
-        <tr><td>Instância WA</td><td><span class="tag g">gi</span></td></tr>
+        <tr><td>InstÃ¢ncia WA</td><td><span class="tag g">gi</span></td></tr>
         <tr><td>Workflow ID</td><td><span class="tag">kk6RqCFdOLZBTzZa</span></td></tr>
       </table></div>
     </div>
@@ -366,30 +367,30 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
   </div>
 </div>
 
-<!-- ═══ TAB: BANCO ═══ -->
+<!-- â•â•â• TAB: BANCO â•â•â• -->
 <div class="panel" id="banco">
-  <div class="stitle"><span class="icon">🗄️</span> Banco de Dados <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ—„ï¸</span> Banco de Dados <span class="line"></span></div>
   <div class="card-grid cols-2">
     <div class="card">
-      <div style="color:var(--v3);font-weight:700;margin-bottom:12px;font-size:.9rem">📋 dados_cliente — Estado do Lead</div>
+      <div style="color:var(--v3);font-weight:700;margin-bottom:12px;font-size:.9rem">ðŸ“‹ dados_cliente â€” Estado do Lead</div>
       <div class="tw"><table>
         <tr><th>Campo</th><th>Tipo</th><th>Default</th></tr>
-        <tr><td><code>"clientID"</code></td><td><span class="tag">VARCHAR(50) UNIQUE</span></td><td>—</td></tr>
-        <tr><td><code>telefone</code></td><td><span class="tag">VARCHAR(50)</span></td><td>—</td></tr>
+        <tr><td><code>"clientID"</code></td><td><span class="tag">VARCHAR(50) UNIQUE</span></td><td>â€”</td></tr>
+        <tr><td><code>telefone</code></td><td><span class="tag">VARCHAR(50)</span></td><td>â€”</td></tr>
         <tr><td><code>nome</code></td><td><span class="tag">VARCHAR(100)</span></td><td>Cliente</td></tr>
         <tr><td><code>ia_ativa</code></td><td><span class="tag c">BOOLEAN</span></td><td><span style="color:var(--g3)">true</span></td></tr>
         <tr><td><code>wait</code></td><td><span class="tag y">BIGINT</span></td><td>0</td></tr>
-        <tr><td><code>msgs_pendentes</code></td><td><span class="tag y">INT ≥0</span></td><td>0</td></tr>
-        <tr><td><code>followup_count</code></td><td><span class="tag y">INT ≤2</span></td><td>0</td></tr>
+        <tr><td><code>msgs_pendentes</code></td><td><span class="tag y">INT â‰¥0</span></td><td>0</td></tr>
+        <tr><td><code>followup_count</code></td><td><span class="tag y">INT â‰¤2</span></td><td>0</td></tr>
         <tr><td><code>ultimo_followup</code></td><td><span class="tag y">BIGINT</span></td><td>0</td></tr>
         <tr><td><code>off</code></td><td><span class="tag c">BOOLEAN</span></td><td><span style="color:var(--r3)">false</span></td></tr>
         <tr><td><code>status</code></td><td><span class="tag">ENUM</span></td><td>new</td></tr>
       </table></div>
-      <div class="alert y" style="margin-top:12px;font-size:.8rem">⚠️ <code>"clientID"</code> requer aspas duplas no PostgreSQL</div>
+      <div class="alert y" style="margin-top:12px;font-size:.8rem">âš ï¸ <code>"clientID"</code> requer aspas duplas no PostgreSQL</div>
     </div>
     <div>
       <div class="card" style="margin-bottom:16px">
-        <div style="color:var(--c3);font-weight:700;margin-bottom:12px;font-size:.9rem">💬 n8n_chat_histories</div>
+        <div style="color:var(--c3);font-weight:700;margin-bottom:12px;font-size:.9rem">ðŸ’¬ n8n_chat_histories</div>
         <div class="tw"><table>
           <tr><th>Campo</th><th>Tipo</th></tr>
           <tr><td><code>session_id</code></td><td><span class="tag">VARCHAR</span> = clientID</td></tr>
@@ -405,7 +406,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 }</pre></div>
       </div>
       <div class="card">
-        <div style="color:var(--g3);font-weight:700;margin-bottom:12px;font-size:.9rem">🔒 Constraints Críticas</div>
+        <div style="color:var(--g3);font-weight:700;margin-bottom:12px;font-size:.9rem">ðŸ”’ Constraints CrÃ­ticas</div>
         <div class="cb"><div class="ch"><span class="cl sql">Constraint + Trigger</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">ALTER TABLE</span> dados_cliente
   <span class="kw">ADD CONSTRAINT</span> followup_max_2
@@ -424,107 +425,107 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
   </div>
 </div>
 
-<!-- ═══ TAB: ESTADOS ═══ -->
+<!-- â•â•â• TAB: ESTADOS â•â•â• -->
 <div class="panel" id="estados">
-  <div class="stitle"><span class="icon">🚦</span> Máquina de Estados <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸš¦</span> MÃ¡quina de Estados <span class="line"></span></div>
   
   <div class="sg" style="margin-bottom:28px">
-    <div class="sc cliente"><div class="sn">✅ CLIENTE</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--g3)">true</span></div><div class="sr"><span class="sk">wait</span><span class="sv">0</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">0</span></div><div class="sr"><span class="sk">destino</span><span class="sv">→ LLM</span></div></div>
-    <div class="sc buffer"><div class="sn">⏳ BUFFER</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--r3)">false</span></div><div class="sr"><span class="sk">wait</span><span class="sv">&gt;0</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">1–2</span></div><div class="sr"><span class="sk">destino</span><span class="sv">→ Silêncio</span></div></div>
-    <div class="sc eqin"><div class="sn">🟣 EQUIPE IN</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--r3)">false</span></div><div class="sr"><span class="sk">wait</span><span class="sv">timestamp</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">0</span></div><div class="sr"><span class="sk">destino</span><span class="sv">→ PARA</span></div></div>
-    <div class="sc eqout"><div class="sn">🔵 EQUIPE OUT</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--g3)">true</span></div><div class="sr"><span class="sk">wait</span><span class="sv">0</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">0</span></div><div class="sr"><span class="sk">destino</span><span class="sv">→ LLM</span></div></div>
+    <div class="sc cliente"><div class="sn">âœ… CLIENTE</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--g3)">true</span></div><div class="sr"><span class="sk">wait</span><span class="sv">0</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">0</span></div><div class="sr"><span class="sk">destino</span><span class="sv">â†’ LLM</span></div></div>
+    <div class="sc buffer"><div class="sn">â³ BUFFER</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--r3)">false</span></div><div class="sr"><span class="sk">wait</span><span class="sv">&gt;0</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">1â€“2</span></div><div class="sr"><span class="sk">destino</span><span class="sv">â†’ SilÃªncio</span></div></div>
+    <div class="sc eqin"><div class="sn">ðŸŸ£ EQUIPE IN</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--r3)">false</span></div><div class="sr"><span class="sk">wait</span><span class="sv">timestamp</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">0</span></div><div class="sr"><span class="sk">destino</span><span class="sv">â†’ PARA</span></div></div>
+    <div class="sc eqout"><div class="sn">ðŸ”µ EQUIPE OUT</div><div class="sr"><span class="sk">ia_ativa</span><span class="sv" style="color:var(--g3)">true</span></div><div class="sr"><span class="sk">wait</span><span class="sv">0</span></div><div class="sr"><span class="sk">msgs</span><span class="sv">0</span></div><div class="sr"><span class="sk">destino</span><span class="sv">â†’ LLM</span></div></div>
   </div>
 
-  <div class="stitle2">🔀 Transições Determinísticas</div>
+  <div class="stitle2">ðŸ”€ TransiÃ§Ãµes DeterminÃ­sticas</div>
   <div class="cb"><div class="ch"><span class="cl txt">State Transitions</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-<pre><span class="fn">fromMe=false</span> + <span class="str">ia_ativa=true</span>                              → <span class="kw">CLIENTE</span>
-<span class="fn">fromMe=false</span> + <span class="str">ia_ativa=false</span> + <span class="num">msgs &lt; 2</span>                 → <span class="kw">BUFFER</span> (msgs++)
-<span class="fn">fromMe=false</span> + <span class="str">ia_ativa=false</span> + <span class="num">msgs ≥ 2</span>                 → <span class="kw">CLIENTE</span> (IA retoma)
-<span class="fn">fromMe=true</span>  + <span class="str">!fim</span>                                       → <span class="kw">EQUIPE_IN</span> (ia=false)
-<span class="fn">fromMe=true</span>  + <span class="str">fim</span> ([FIM]/tchau/obrigad/valeu)             → <span class="kw">EQUIPE_OUT</span> (ia=true)
+<pre><span class="fn">fromMe=false</span> + <span class="str">ia_ativa=true</span>                              â†’ <span class="kw">CLIENTE</span>
+<span class="fn">fromMe=false</span> + <span class="str">ia_ativa=false</span> + <span class="num">msgs &lt; 2</span>                 â†’ <span class="kw">BUFFER</span> (msgs++)
+<span class="fn">fromMe=false</span> + <span class="str">ia_ativa=false</span> + <span class="num">msgs â‰¥ 2</span>                 â†’ <span class="kw">CLIENTE</span> (IA retoma)
+<span class="fn">fromMe=true</span>  + <span class="str">!fim</span>                                       â†’ <span class="kw">EQUIPE_IN</span> (ia=false)
+<span class="fn">fromMe=true</span>  + <span class="str">fim</span> ([FIM]/tchau/obrigad/valeu)             â†’ <span class="kw">EQUIPE_OUT</span> (ia=true)
 
-<span class="cmt">// 🔥 ABANDONO (Patch v7.2 — prioridade máxima)</span>
-<span class="fn">!ia_ativa</span> + <span class="num">msgs ≥ 1</span> + <span class="num">wait &gt; 0</span> + <span class="num">delta &gt; 120000ms</span>      → <span class="kw">CLIENTE</span> (auto-resume)</pre></div>
+<span class="cmt">// ðŸ”¥ ABANDONO (Patch v7.2 â€” prioridade mÃ¡xima)</span>
+<span class="fn">!ia_ativa</span> + <span class="num">msgs â‰¥ 1</span> + <span class="num">wait &gt; 0</span> + <span class="num">delta &gt; 120000ms</span>      â†’ <span class="kw">CLIENTE</span> (auto-resume)</pre></div>
 
-  <div class="stitle2">📏 Regras de Estado</div>
-  <div class="ir ok"><span class="ii">🔇</span><div><div class="it">BUFFER nunca responde imediatamente</div><div class="id">Silêncio total — acumula msgs até limite</div></div></div>
-  <div class="ir ok"><span class="ii">🚫</span><div><div class="it">EQUIPE_IN bloqueia IA absolutamente</div><div class="id">Nenhuma resposta automática enquanto false</div></div></div>
-  <div class="ir ok"><span class="ii">♻️</span><div><div class="it">EQUIPE_OUT reativa e zera contadores</div><div class="id">ia_ativa=true, wait=0, msgs=0</div></div></div>
-  <div class="ir warn"><span class="ii">💀</span><div><div class="it">KILL — equipe respondeu &lt; 10min após handoff</div><div class="id">Check Fail detecta e decide: silêncio vs retomar</div></div></div>
-  <div class="ir ok"><span class="ii">🔄</span><div><div class="it">Estado inválido não existe</div><div class="id">Fallback sempre para CLIENTE com healing</div></div></div>
+  <div class="stitle2">ðŸ“ Regras de Estado</div>
+  <div class="ir ok"><span class="ii">ðŸ”‡</span><div><div class="it">BUFFER nunca responde imediatamente</div><div class="id">SilÃªncio total â€” acumula msgs atÃ© limite</div></div></div>
+  <div class="ir ok"><span class="ii">ðŸš«</span><div><div class="it">EQUIPE_IN bloqueia IA absolutamente</div><div class="id">Nenhuma resposta automÃ¡tica enquanto false</div></div></div>
+  <div class="ir ok"><span class="ii">â™»ï¸</span><div><div class="it">EQUIPE_OUT reativa e zera contadores</div><div class="id">ia_ativa=true, wait=0, msgs=0</div></div></div>
+  <div class="ir warn"><span class="ii">ðŸ’€</span><div><div class="it">KILL â€” equipe respondeu &lt; 10min apÃ³s handoff</div><div class="id">Check Fail detecta e decide: silÃªncio vs retomar</div></div></div>
+  <div class="ir ok"><span class="ii">ðŸ”„</span><div><div class="it">Estado invÃ¡lido nÃ£o existe</div><div class="id">Fallback sempre para CLIENTE com healing</div></div></div>
 </div>
 
-<!-- ═══ TAB: PIPELINE ═══ -->
+<!-- â•â•â• TAB: PIPELINE â•â•â• -->
 <div class="panel" id="pipeline">
-  <div class="stitle"><span class="icon">🔄</span> Pipeline Canônico (63 nós) <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ”„</span> Pipeline CanÃ´nico (63 nÃ³s) <span class="line"></span></div>
 
   <div class="card-grid cols-2">
     <div>
-      <div class="stitle2">🔌 Main Flow</div>
+      <div class="stitle2">ðŸ”Œ Main Flow</div>
       <div class="flow">
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(124,58,237,.15);border-color:var(--v1);color:var(--v3)">WH</div><div class="fc" style="background:linear-gradient(var(--v1),var(--v2))"></div></div><div class="ft"><h4>Webhook</h4><p>POST /genius — Evolution API webhook</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(124,58,237,.15);border-color:var(--v2);color:var(--v3)">VF</div><div class="fc" style="background:linear-gradient(var(--v2),var(--c1))"></div></div><div class="ft"><h4>Verify — SQL</h4><p>LEFT JOIN + COALESCE · Nunca retorna zero linhas</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(6,182,212,.15);border-color:var(--c1);color:var(--c3)">CR</div><div class="fc" style="background:linear-gradient(var(--c1),var(--c2))"></div></div><div class="ft"><h4>Core v3.6</h4><p>Parseia webhook + merge DB · Boolean healing</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(6,182,212,.15);border-color:var(--c2);color:var(--c3)">C2</div><div class="fc" style="background:linear-gradient(var(--c2),var(--g1))"></div></div><div class="ft"><h4>Core II ⭐ Adapter</h4><p>Normaliza + healing leve · Zero lógica negócio</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(16,185,129,.15);border-color:var(--g1);color:var(--g3)">RT</div><div class="fc" style="background:linear-gradient(var(--g1),var(--g2))"></div></div><div class="ft"><h4>Router v7.2</h4><p>Função pura determinística · Patch abandono · 5 rotas</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(16,185,129,.15);border-color:var(--g2);color:var(--g3)">R2</div><div class="fc" style="background:linear-gradient(var(--g2),var(--y1))"></div></div><div class="ft"><h4>Router II ⭐ Adapter</h4><p>Contrato imutável · chatInput + modo + healing</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(124,58,237,.15);border-color:var(--v1);color:var(--v3)">WH</div><div class="fc" style="background:linear-gradient(var(--v1),var(--v2))"></div></div><div class="ft"><h4>Webhook</h4><p>POST /genius â€” Evolution API webhook</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(124,58,237,.15);border-color:var(--v2);color:var(--v3)">VF</div><div class="fc" style="background:linear-gradient(var(--v2),var(--c1))"></div></div><div class="ft"><h4>Verify â€” SQL</h4><p>LEFT JOIN + COALESCE Â· Nunca retorna zero linhas</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(6,182,212,.15);border-color:var(--c1);color:var(--c3)">CR</div><div class="fc" style="background:linear-gradient(var(--c1),var(--c2))"></div></div><div class="ft"><h4>Core v3.6</h4><p>Parseia webhook + merge DB Â· Boolean healing</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(6,182,212,.15);border-color:var(--c2);color:var(--c3)">C2</div><div class="fc" style="background:linear-gradient(var(--c2),var(--g1))"></div></div><div class="ft"><h4>Core II â­ Adapter</h4><p>Normaliza + healing leve Â· Zero lÃ³gica negÃ³cio</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(16,185,129,.15);border-color:var(--g1);color:var(--g3)">RT</div><div class="fc" style="background:linear-gradient(var(--g1),var(--g2))"></div></div><div class="ft"><h4>Router v7.2</h4><p>FunÃ§Ã£o pura determinÃ­stica Â· Patch abandono Â· 5 rotas</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(16,185,129,.15);border-color:var(--g2);color:var(--g3)">R2</div><div class="fc" style="background:linear-gradient(var(--g2),var(--y1))"></div></div><div class="ft"><h4>Router II â­ Adapter</h4><p>Contrato imutÃ¡vel Â· chatInput + modo + healing</p></div></div>
         <div class="fi"><div class="fl"><div class="fd" style="background:rgba(245,158,11,.15);border-color:var(--y1);color:var(--y3)">SW</div><div class="fc" style="background:linear-gradient(var(--y1),var(--y2))"></div></div><div class="ft"><h4>Rotas (Switch)</h4><p>EQUIPE_IN | EQUIPE_OUT | CLIENTE | BUFFER</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(245,158,11,.15);border-color:var(--y2);color:var(--y3)">BF</div><div class="fc" style="background:linear-gradient(var(--y2),var(--p1))"></div></div><div class="ft"><h4>Briefing v10.5</h4><p>Injeta contexto mínimo p/ LLM · 12 situations</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(236,72,153,.15);border-color:var(--p1);color:var(--p2)">AI</div><div class="fc" style="background:linear-gradient(var(--p1),var(--p2))"></div></div><div class="ft"><h4>Agente LLM</h4><p>Memory + Tools + Deep/OpenAI · sessionId</p></div></div>
-        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(236,72,153,.15);border-color:var(--p2);color:var(--p2)">SL</div><div style="width:2px;height:0"></div></div><div class="ft"><h4>Selector v3.3 → Spliter → Envio</h4><p>Valida + divide parágrafos + Evolution API send</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(245,158,11,.15);border-color:var(--y2);color:var(--y3)">BF</div><div class="fc" style="background:linear-gradient(var(--y2),var(--p1))"></div></div><div class="ft"><h4>Briefing v10.5</h4><p>Injeta contexto mÃ­nimo p/ LLM Â· 12 situations</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(236,72,153,.15);border-color:var(--p1);color:var(--p2)">AI</div><div class="fc" style="background:linear-gradient(var(--p1),var(--p2))"></div></div><div class="ft"><h4>Agente LLM</h4><p>Memory + Tools + Deep/OpenAI Â· sessionId</p></div></div>
+        <div class="fi"><div class="fl"><div class="fd" style="background:rgba(236,72,153,.15);border-color:var(--p2);color:var(--p2)">SL</div><div style="width:2px;height:0"></div></div><div class="ft"><h4>Selector v3.3 â†’ Spliter â†’ Envio</h4><p>Valida + divide parÃ¡grafos + Evolution API send</p></div></div>
       </div>
     </div>
     <div>
-      <div class="stitle2">⚡ Performance por Nó</div>
+      <div class="stitle2">âš¡ Performance por NÃ³</div>
       <div class="card" style="padding:20px">
         <div class="pb"><div class="pl"><span>Webhook</span><span style="color:var(--g3)">instant</span></div><div class="pt"><div class="pf" style="width:1%;background:linear-gradient(90deg,var(--g2),var(--c2))"></div></div></div>
         <div class="pb"><div class="pl"><span>Verify (SQL)</span><span>~3ms</span></div><div class="pt"><div class="pf" style="width:3%;background:linear-gradient(90deg,var(--v2),var(--p2))"></div></div></div>
         <div class="pb"><div class="pl"><span>Core + Core II</span><span>~24ms</span></div><div class="pt"><div class="pf" style="width:10%;background:linear-gradient(90deg,var(--c2),var(--g2))"></div></div></div>
         <div class="pb"><div class="pl"><span>Router + Router II</span><span>~13ms</span></div><div class="pt"><div class="pf" style="width:7%;background:linear-gradient(90deg,var(--y2),var(--p2))"></div></div></div>
         <div class="pb"><div class="pl"><span>Briefing</span><span>~12ms</span></div><div class="pt"><div class="pf" style="width:6%;background:linear-gradient(90deg,var(--p2),var(--v2))"></div></div></div>
-        <div class="pb"><div class="pl"><span>AI Agent (LLM)</span><span style="color:var(--y3)">2–5s</span></div><div class="pt"><div class="pf" style="width:80%;background:linear-gradient(90deg,var(--y2),var(--r2))"></div></div></div>
+        <div class="pb"><div class="pl"><span>AI Agent (LLM)</span><span style="color:var(--y3)">2â€“5s</span></div><div class="pt"><div class="pf" style="width:80%;background:linear-gradient(90deg,var(--y2),var(--r2))"></div></div></div>
         <div class="pb"><div class="pl"><span>Selector + Spliter</span><span>~16ms</span></div><div class="pt"><div class="pf" style="width:8%;background:linear-gradient(90deg,var(--g2),var(--c2))"></div></div></div>
-        <div class="pb" style="margin-bottom:0"><div class="pl"><span>Envio HTTP</span><span>1–2s</span></div><div class="pt"><div class="pf" style="width:40%;background:linear-gradient(90deg,var(--c2),var(--v2))"></div></div></div>
+        <div class="pb" style="margin-bottom:0"><div class="pl"><span>Envio HTTP</span><span>1â€“2s</span></div><div class="pt"><div class="pf" style="width:40%;background:linear-gradient(90deg,var(--c2),var(--v2))"></div></div></div>
         <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border);display:flex;gap:20px;font-size:.78rem">
           <span>Sem AI: <strong style="color:var(--g3)">~100ms</strong></span>
-          <span>Com AI: <strong style="color:var(--y3)">~3–6s</strong></span>
+          <span>Com AI: <strong style="color:var(--y3)">~3â€“6s</strong></span>
         </div>
       </div>
 
-      <div class="stitle2">🔁 Follow-up Assíncrono</div>
+      <div class="stitle2">ðŸ” Follow-up AssÃ­ncrono</div>
       <div class="card" style="padding:16px;font-family:var(--mono);font-size:.78rem;color:var(--c3)">
-        Wait 5min → Set Push → Push Follow (SQL)<br>→ Follow Route (IF) → Mark (SQL)<br>→ To Briefing → LLM → Envio
+        Wait 5min â†’ Set Push â†’ Push Follow (SQL)<br>â†’ Follow Route (IF) â†’ Mark (SQL)<br>â†’ To Briefing â†’ LLM â†’ Envio
       </div>
 
-      <div class="stitle2">🚦 Convergência Final</div>
-      <div class="alert g" style="font-size:.82rem">Todas as rotas convergem para 2 destinos reais: <strong>PARA</strong> (silêncio) ou <strong>AGENT</strong> (LLM)</div>
+      <div class="stitle2">ðŸš¦ ConvergÃªncia Final</div>
+      <div class="alert g" style="font-size:.82rem">Todas as rotas convergem para 2 destinos reais: <strong>PARA</strong> (silÃªncio) ou <strong>AGENT</strong> (LLM)</div>
     </div>
   </div>
 </div>
 
-<!-- ═══ TAB: ADAPTERS ═══ -->
+<!-- â•â•â• TAB: ADAPTERS â•â•â• -->
 <div class="panel" id="adapters">
-  <div class="stitle"><span class="icon">🔌</span> Adapter Pattern <span class="line"></span></div>
-  <div class="cb"><div class="ch"><span class="cl txt">Padrão Imutável</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-<pre>Nó Lógico (pode mudar)   →   <span class="kw">Adapter (NUNCA muda)</span>   →   Downstream (JSON garantido)</pre></div>
+  <div class="stitle"><span class="icon">ðŸ”Œ</span> Adapter Pattern <span class="line"></span></div>
+  <div class="cb"><div class="ch"><span class="cl txt">PadrÃ£o ImutÃ¡vel</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+<pre>NÃ³ LÃ³gico (pode mudar)   â†’   <span class="kw">Adapter (NUNCA muda)</span>   â†’   Downstream (JSON garantido)</pre></div>
   <div class="tw" style="margin-top:16px"><table>
-    <tr><th>Adapter</th><th>Posição</th><th>Função</th></tr>
-    <tr><td><span class="tag">Core II</span></td><td>Core → Core II</td><td>Normaliza entrada webhook</td></tr>
-    <tr><td><span class="tag c">Router II</span></td><td>Router → Router II</td><td>Contrato de decisão de rota</td></tr>
-    <tr><td><span class="tag y">AI Output</span></td><td>(dentro Selector)</td><td>Valida saída LLM</td></tr>
-    <tr><td><span class="tag g">SQL CTE</span></td><td>(CTE adapter nos SQLs)</td><td>Garante parâmetros SQL</td></tr>
+    <tr><th>Adapter</th><th>PosiÃ§Ã£o</th><th>FunÃ§Ã£o</th></tr>
+    <tr><td><span class="tag">Core II</span></td><td>Core â†’ Core II</td><td>Normaliza entrada webhook</td></tr>
+    <tr><td><span class="tag c">Router II</span></td><td>Router â†’ Router II</td><td>Contrato de decisÃ£o de rota</td></tr>
+    <tr><td><span class="tag y">AI Output</span></td><td>(dentro Selector)</td><td>Valida saÃ­da LLM</td></tr>
+    <tr><td><span class="tag g">SQL CTE</span></td><td>(CTE adapter nos SQLs)</td><td>Garante parÃ¢metros SQL</td></tr>
   </table></div>
-  <div class="stitle2">❌ O que Adapter NUNCA faz</div>
-  <div class="ir err"><span class="ii">⛔</span><div><div class="it">Contém lógica de negócio</div><div class="id">Zero if/else decisório — apenas normalização</div></div></div>
-  <div class="ir err"><span class="ii">⛔</span><div><div class="it">Consulta outros nós</div><div class="id"><code>$('OutroNode')</code> é proibido em adapters</div></div></div>
-  <div class="ir err"><span class="ii">⛔</span><div><div class="it">Muda sem migração formal</div><div class="id">Imutável — qualquer mudança requer documentação</div></div></div>
+  <div class="stitle2">âŒ O que Adapter NUNCA faz</div>
+  <div class="ir err"><span class="ii">â›”</span><div><div class="it">ContÃ©m lÃ³gica de negÃ³cio</div><div class="id">Zero if/else decisÃ³rio â€” apenas normalizaÃ§Ã£o</div></div></div>
+  <div class="ir err"><span class="ii">â›”</span><div><div class="it">Consulta outros nÃ³s</div><div class="id"><code>$('OutroNode')</code> Ã© proibido em adapters</div></div></div>
+  <div class="ir err"><span class="ii">â›”</span><div><div class="it">Muda sem migraÃ§Ã£o formal</div><div class="id">ImutÃ¡vel â€” qualquer mudanÃ§a requer documentaÃ§Ã£o</div></div></div>
 </div>
 
-<!-- ═══ TAB: CODE ═══ -->
+<!-- â•â•â• TAB: CODE â•â•â• -->
 <div class="panel" id="code">
-  <div class="stitle"><span class="icon">💻</span> Code Nodes — Produção <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ’»</span> Code Nodes â€” ProduÃ§Ã£o <span class="line"></span></div>
   <div class="card-grid cols-2">
-    <div class="cb"><div class="ch"><span class="cl js">Core v3.6 — Parser</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl js">Core v3.6 â€” Parser</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">var</span> webhook = $(<span class="str">'Webhook'</span>).item.json.body || {};
 <span class="kw">var</span> data = webhook.data || {};
 <span class="kw">var</span> key = data.key || {};
@@ -550,7 +551,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
         status: DB.status, is_new: DB.is_new },
   msgs_pendentes: <span class="fn">parseInt</span>(DB.msgs_pendentes) || <span class="num">0</span>
 }}];</pre></div>
-    <div class="cb"><div class="ch"><span class="cl js">Core II — Adapter</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl js">Core II â€” Adapter</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">const</span> input = $input.<span class="fn">first</span>()?.json ?? {};
 
 <span class="kw">const</span> <span class="fn">num</span>  = (v,d=<span class="num">0</span>) => <span class="fn">isNaN</span>(<span class="fn">Number</span>(v)) ? d : <span class="fn">Number</span>(v);
@@ -561,7 +562,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 <span class="kw">const</span> ia_ativa = <span class="fn">bool</span>(dbIn.ia_ativa);
 <span class="kw">const</span> wait_raw = <span class="fn">num</span>(dbIn.wait);
 
-<span class="cmt">// healing: IA ativa → wait não existe</span>
+<span class="cmt">// healing: IA ativa â†’ wait nÃ£o existe</span>
 <span class="kw">const</span> wait = ia_ativa ? <span class="num">0</span> : wait_raw;
 
 <span class="kw">return</span> [{ json: {
@@ -570,17 +571,17 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
   msgs_pendentes: <span class="fn">num</span>(input.msgs_pendentes),
   _debug: { adapter: <span class="str">'core-ii'</span> }
 }}];</pre></div>
-    <div class="cb"><div class="ch"><span class="cl js">Router v7.2 — Função Pura</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl js">Router v7.2 â€” FunÃ§Ã£o Pura</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">const</span> MAX_MSGS = <span class="num">2</span>;
 <span class="kw">const</span> ABANDONO_TIMEOUT = <span class="num">120000</span>; <span class="cmt">// 2 min</span>
 
 <span class="kw">const</span> fim = <span class="str">/\[FIM\]/i</span>.<span class="fn">test</span>(mensagem) ||
-  <span class="str">/tchau|obrigad|valeu|até/i</span>.<span class="fn">test</span>(mensagem);
+  <span class="str">/tchau|obrigad|valeu|atÃ©/i</span>.<span class="fn">test</span>(mensagem);
 <span class="kw">const</span> delta = Date.<span class="fn">now</span>() - dbWait;
 
 <span class="kw">let</span> rota = <span class="str">'CLIENTE'</span>;
 
-<span class="cmt">// 🔥 ABANDONO (prioridade máxima)</span>
+<span class="cmt">// ðŸ”¥ ABANDONO (prioridade mÃ¡xima)</span>
 <span class="kw">if</span> (!dbIaAtiva && msgs >= <span class="num">1</span> && dbWait > <span class="num">0</span>
     && delta > ABANDONO_TIMEOUT) {
   rota = <span class="str">'CLIENTE'</span>; novaIaAtiva = <span class="kw">true</span>;
@@ -598,7 +599,7 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
 <span class="kw">else if</span> (!fromMe && !dbIaAtiva && msgs >= MAX_MSGS) {
   rota = <span class="str">'CLIENTE'</span>; novaIaAtiva = <span class="kw">true</span>;
 }</pre></div>
-    <div class="cb"><div class="ch"><span class="cl js">Selector v3.3 — Validação</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl js">Selector v3.3 â€” ValidaÃ§Ã£o</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="cmt">// Parse robusto: string | object | nested</span>
 <span class="kw">let</span> parsed = {};
 <span class="kw">try</span> {
@@ -611,22 +612,22 @@ pre{padding:18px;overflow-x:auto;font-size:.8rem;line-height:1.6;font-family:var
   parsed = { mensagem_cliente: output };
 }
 
-<span class="cmt">// Validações</span>
+<span class="cmt">// ValidaÃ§Ãµes</span>
 statusOk  = [<span class="str">'new'</span>,<span class="str">'warm'</span>,<span class="str">'hot'</span>,<span class="str">'win'</span>,<span class="str">'loss'</span>,<span class="str">'off'</span>]
   .<span class="fn">includes</span>(parsed.status);
 mensagemOk = msg.length > <span class="num">0</span> && msg.length <= <span class="num">500</span>;
 linhasOk   = msg.<span class="fn">split</span>(<span class="str">'\n'</span>).length <= <span class="num">4</span>;
 
-<span class="cmt">// Healing: status inválido + msg ok → 'new'</span>
+<span class="cmt">// Healing: status invÃ¡lido + msg ok â†’ 'new'</span>
 <span class="kw">if</span> (!statusOk && mensagemOk) status = <span class="str">'new'</span>;</pre></div>
   </div>
 </div>
 
-<!-- ═══ TAB: SQL ═══ -->
+<!-- â•â•â• TAB: SQL â•â•â• -->
 <div class="panel" id="sql">
-  <div class="stitle"><span class="icon">🗃️</span> SQL Nodes — Produção <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ—ƒï¸</span> SQL Nodes â€” ProduÃ§Ã£o <span class="line"></span></div>
   <div class="card-grid cols-2">
-    <div class="cb"><div class="ch"><span class="cl sql">Verify — LEFT JOIN</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl sql">Verify â€” LEFT JOIN</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">SELECT</span>
   <span class="fn">COALESCE</span>(b.<span class="str">"clientID"</span>, <span class="str">'{{ remoteJid }}'</span>) <span class="kw">AS</span> <span class="str">"clientID"</span>,
   <span class="fn">COALESCE</span>(b.ia_ativa, <span class="kw">true</span>)  <span class="kw">AS</span> ia_ativa,
@@ -658,7 +659,7 @@ linhasOk   = msg.<span class="fn">split</span>(<span class="str">'\n'</span>).le
   ) <span class="kw">AS</span> msgs_equipe_apos_wait
 <span class="kw">FROM</span> n8n_chat_histories
 <span class="kw">WHERE</span> session_id = <span class="str">'{{ ClientID }}'</span></pre></div>
-    <div class="cb"><div class="ch"><span class="cl sql">Cadastro — UPSERT</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl sql">Cadastro â€” UPSERT</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">WITH</span> adapter <span class="kw">AS</span> (
   <span class="kw">SELECT</span>
     <span class="fn">NULLIF</span>(<span class="fn">TRIM</span>(<span class="str">'{{ ClientID }}'</span>), <span class="str">''</span>) <span class="kw">AS</span> cid,
@@ -677,7 +678,7 @@ linhasOk   = msg.<span class="fn">split</span>(<span class="str">'\n'</span>).le
     <span class="kw">IS NOT NULL THEN</span> EXCLUDED.nome
     <span class="kw">ELSE</span> dados_cliente.nome <span class="kw">END</span>
 <span class="kw">RETURNING</span> *;</pre></div>
-    <div class="cb"><div class="ch"><span class="cl sql">Mark — Follow-up</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
+    <div class="cb"><div class="ch"><span class="cl sql">Mark â€” Follow-up</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">UPDATE</span> dados_cliente <span class="kw">SET</span>
   followup_count = <span class="fn">LEAST</span>(
     <span class="fn">COALESCE</span>(followup_count, <span class="num">0</span>) + <span class="num">1</span>, <span class="num">2</span>),
@@ -705,63 +706,63 @@ linhasOk   = msg.<span class="fn">split</span>(<span class="str">'\n'</span>).le
   </div>
 </div>
 
-<!-- ═══ TAB: ROTAS ═══ -->
+<!-- â•â•â• TAB: ROTAS â•â•â• -->
 <div class="panel" id="rotas">
-  <div class="stitle"><span class="icon">🗺️</span> Tabela de Rotas Completa <span class="line"></span></div>
-  <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:14px;padding:8px 18px;font-size:.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)"><span>Rota</span><span>Condição</span><span>Ação</span></div>
-  <div class="rr"><div><span class="rb ein">EQUIPE IN</span></div><div><div class="rl">Trigger</div><div class="rv"><code>fromMe=true AND fim=false</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=false, wait=now, msgs=0 → <strong>PARA</strong></div></div></div>
-  <div class="rr"><div><span class="rb eout">EQUIPE OUT</span></div><div><div class="rl">Trigger</div><div class="rv"><code>fromMe=true AND fim=true</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=true, wait=0 → <strong>Briefing → LLM</strong></div></div></div>
-  <div class="rr"><div><span class="rb buf">BUFFER</span></div><div><div class="rl">Trigger</div><div class="rv"><code>!fromMe AND !ia AND msgs&lt;2</code></div></div><div><div class="rl">Resultado</div><div class="rv">msgs++ → <strong>Silêncio</strong></div></div></div>
-  <div class="rr"><div><span class="rb buf">BUFFER FULL</span></div><div><div class="rl">Trigger</div><div class="rv"><code>!fromMe AND !ia AND msgs≥2</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=true, msgs=0 → <strong>Briefing → LLM</strong></div></div></div>
-  <div class="rr" style="border:1px solid rgba(239,68,68,.2)"><div><span class="rb abn">🔥 ABANDONO</span></div><div><div class="rl">Trigger</div><div class="rv"><code>!ia AND msgs≥1 AND wait>0 AND Δ>2min</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=true, wait=0, msgs=0 → <strong>Auto-resume</strong></div></div></div>
-  <div class="rr"><div><span class="rb cad">CADASTRO</span></div><div><div class="rl">Trigger</div><div class="rv"><code>is_new=true</code></div></div><div><div class="rl">Resultado</div><div class="rv">UPSERT → <strong>Briefing → LLM</strong></div></div></div>
-  <div class="rr"><div><span class="rb cli">CLIENTE</span></div><div><div class="rl">Trigger</div><div class="rv">Default · <code>ia_ativa=true · fromMe=false</code></div></div><div><div class="rl">Resultado</div><div class="rv">Fluxo normal → <strong>Briefing → LLM</strong></div></div></div>
+  <div class="stitle"><span class="icon">ðŸ—ºï¸</span> Tabela de Rotas Completa <span class="line"></span></div>
+  <div style="display:grid;grid-template-columns:130px 1fr 1fr;gap:14px;padding:8px 18px;font-size:.7rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted)"><span>Rota</span><span>CondiÃ§Ã£o</span><span>AÃ§Ã£o</span></div>
+  <div class="rr"><div><span class="rb ein">EQUIPE IN</span></div><div><div class="rl">Trigger</div><div class="rv"><code>fromMe=true AND fim=false</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=false, wait=now, msgs=0 â†’ <strong>PARA</strong></div></div></div>
+  <div class="rr"><div><span class="rb eout">EQUIPE OUT</span></div><div><div class="rl">Trigger</div><div class="rv"><code>fromMe=true AND fim=true</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=true, wait=0 â†’ <strong>Briefing â†’ LLM</strong></div></div></div>
+  <div class="rr"><div><span class="rb buf">BUFFER</span></div><div><div class="rl">Trigger</div><div class="rv"><code>!fromMe AND !ia AND msgs&lt;2</code></div></div><div><div class="rl">Resultado</div><div class="rv">msgs++ â†’ <strong>SilÃªncio</strong></div></div></div>
+  <div class="rr"><div><span class="rb buf">BUFFER FULL</span></div><div><div class="rl">Trigger</div><div class="rv"><code>!fromMe AND !ia AND msgsâ‰¥2</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=true, msgs=0 â†’ <strong>Briefing â†’ LLM</strong></div></div></div>
+  <div class="rr" style="border:1px solid rgba(239,68,68,.2)"><div><span class="rb abn">ðŸ”¥ ABANDONO</span></div><div><div class="rl">Trigger</div><div class="rv"><code>!ia AND msgsâ‰¥1 AND wait>0 AND Î”>2min</code></div></div><div><div class="rl">Resultado</div><div class="rv">ia=true, wait=0, msgs=0 â†’ <strong>Auto-resume</strong></div></div></div>
+  <div class="rr"><div><span class="rb cad">CADASTRO</span></div><div><div class="rl">Trigger</div><div class="rv"><code>is_new=true</code></div></div><div><div class="rl">Resultado</div><div class="rv">UPSERT â†’ <strong>Briefing â†’ LLM</strong></div></div></div>
+  <div class="rr"><div><span class="rb cli">CLIENTE</span></div><div><div class="rl">Trigger</div><div class="rv">Default Â· <code>ia_ativa=true Â· fromMe=false</code></div></div><div><div class="rl">Resultado</div><div class="rv">Fluxo normal â†’ <strong>Briefing â†’ LLM</strong></div></div></div>
 </div>
 
-<!-- ═══ TAB: CHECK FAIL ═══ -->
+<!-- â•â•â• TAB: CHECK FAIL â•â•â• -->
 <div class="panel" id="checkfail">
-  <div class="stitle"><span class="icon">🔥</span> Check Fail & Abandono <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ”¥</span> Check Fail & Abandono <span class="line"></span></div>
   <div class="cb"><div class="ch"><span class="cl txt">Fluxo Check Fail</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-<pre>EQUIPE_IN/OUT → Save History → Set Buffer → <span class="kw">Timestamp</span> (1min wait)
-    → rotas(minor) Switch
-        ├─ EQUIPE_IN/OUT → <span class="fn">Check Fail SQL</span> → Fail IF
-        │     ├─ <span class="str">True</span>  (≤1 msg equipe) → Merge Route → <span class="kw">IA retoma</span>
-        │     └─ <span class="num">False</span> (≥2 msgs equipe) → Kill (<span class="cmt">FIM</span>)
-        └─ BUFFER → Buffer Update → Compare → Merge Route</pre></div>
+<pre>EQUIPE_IN/OUT â†’ Save History â†’ Set Buffer â†’ <span class="kw">Timestamp</span> (1min wait)
+    â†’ rotas(minor) Switch
+        â”œâ”€ EQUIPE_IN/OUT â†’ <span class="fn">Check Fail SQL</span> â†’ Fail IF
+        â”‚     â”œâ”€ <span class="str">True</span>  (â‰¤1 msg equipe) â†’ Merge Route â†’ <span class="kw">IA retoma</span>
+        â”‚     â””â”€ <span class="num">False</span> (â‰¥2 msgs equipe) â†’ Kill (<span class="cmt">FIM</span>)
+        â””â”€ BUFFER â†’ Buffer Update â†’ Compare â†’ Merge Route</pre></div>
   <div class="card-grid cols-2" style="margin-top:16px">
-    <div class="gc c"><h3>Lógica</h3><div class="sub">1. Espera 1 min após Save History<br>2. Conta msgs da Equipe após wait<br>3. ≤1 msg → equipe abandonou → IA retoma<br>4. ≥2 msgs → conversa real → Kill</div></div>
-    <div class="gc y"><h3>Cron Backup</h3><div class="sub"><code>zera-wait-expirado</code> roda a cada 1 min<br>Se ia_ativa=false AND wait>0 AND delta>2min<br>→ SET wait=0 automaticamente<br>Garante recuperação se n8n falhar</div></div>
+    <div class="gc c"><h3>LÃ³gica</h3><div class="sub">1. Espera 1 min apÃ³s Save History<br>2. Conta msgs da Equipe apÃ³s wait<br>3. â‰¤1 msg â†’ equipe abandonou â†’ IA retoma<br>4. â‰¥2 msgs â†’ conversa real â†’ Kill</div></div>
+    <div class="gc y"><h3>Cron Backup</h3><div class="sub"><code>zera-wait-expirado</code> roda a cada 1 min<br>Se ia_ativa=false AND wait>0 AND delta>2min<br>â†’ SET wait=0 automaticamente<br>Garante recuperaÃ§Ã£o se n8n falhar</div></div>
   </div>
 </div>
 
-<!-- ═══ TAB: FOLLOW-UP ═══ -->
+<!-- â•â•â• TAB: FOLLOW-UP â•â•â• -->
 <div class="panel" id="followup">
-  <div class="stitle"><span class="icon">📡</span> Follow-Up Automático <span class="line"></span></div>
-  <div class="stitle2">Condições (todas verdadeiras)</div>
+  <div class="stitle"><span class="icon">ðŸ“¡</span> Follow-Up AutomÃ¡tico <span class="line"></span></div>
+  <div class="stitle2">CondiÃ§Ãµes (todas verdadeiras)</div>
   <div class="cb"><div class="ch"><span class="cl sql">Push Follow Query</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre>ia_ativa = <span class="kw">true</span>
 <span class="kw">AND</span> followup_count < <span class="num">2</span>
 <span class="kw">AND</span> off = <span class="kw">false</span>
 <span class="kw">AND</span> (now_ms - ultimo_followup) > <span class="num">10800000</span>  <span class="cmt">-- 3h cooldown</span>
 <span class="kw">AND</span> msgs_pendentes >= <span class="num">2</span>
-<span class="kw">AND</span> (now_ms - wait) > <span class="num">300000</span>              <span class="cmt">-- 5min desde última msg</span></pre></div>
+<span class="kw">AND</span> (now_ms - wait) > <span class="num">300000</span>              <span class="cmt">-- 5min desde Ãºltima msg</span></pre></div>
   <div class="card-grid cols-3" style="margin-top:16px">
     <div class="gc v" style="padding:14px"><div class="sub">Cooldown</div><div class="val" style="font-size:1.3rem">3 horas</div></div>
-    <div class="gc c" style="padding:14px"><div class="sub">Máx tentativas</div><div class="val" style="font-size:1.3rem">2</div></div>
-    <div class="gc y" style="padding:14px"><div class="sub">Wait mínimo</div><div class="val" style="font-size:1.3rem">5 min</div></div>
+    <div class="gc c" style="padding:14px"><div class="sub">MÃ¡x tentativas</div><div class="val" style="font-size:1.3rem">2</div></div>
+    <div class="gc y" style="padding:14px"><div class="sub">Wait mÃ­nimo</div><div class="val" style="font-size:1.3rem">5 min</div></div>
   </div>
 </div>
 
-<!-- ═══ TAB: CRON ═══ -->
+<!-- â•â•â• TAB: CRON â•â•â• -->
 <div class="panel" id="cron">
-  <div class="stitle"><span class="icon">⏰</span> Cron Jobs (pg_cron) <span class="line"></span></div>
+  <div class="stitle"><span class="icon">â°</span> Cron Jobs (pg_cron) <span class="line"></span></div>
   <div class="tw"><table>
     <tr><th>jobid</th><th>Nome</th><th>Schedule</th><th>Status</th></tr>
-    <tr><td>14</td><td><code>healing-check</code></td><td><span class="tag">* * * * *</span> (1min)</td><td><span class="tag g">✅ Ativo</span></td></tr>
-    <tr><td>15</td><td><code>zera-wait-expirado</code></td><td><span class="tag">* * * * *</span> (1min)</td><td><span class="tag g">✅ Ativo</span></td></tr>
-    <tr><td>9</td><td><code>limpeza_semanal</code></td><td><span class="tag">Dom 2h</span></td><td><span class="tag g">✅ Ativo</span></td></tr>
-    <tr><td><del>6</del></td><td><del>pre_follow_3min</del></td><td>—</td><td><span class="tag r">🗑️ Removido</span></td></tr>
-    <tr><td><del>7</del></td><td><del>pre_follow_10min</del></td><td>—</td><td><span class="tag r">🗑️ Removido</span></td></tr>
+    <tr><td>14</td><td><code>healing-check</code></td><td><span class="tag">* * * * *</span> (1min)</td><td><span class="tag g">âœ… Ativo</span></td></tr>
+    <tr><td>15</td><td><code>zera-wait-expirado</code></td><td><span class="tag">* * * * *</span> (1min)</td><td><span class="tag g">âœ… Ativo</span></td></tr>
+    <tr><td>9</td><td><code>limpeza_semanal</code></td><td><span class="tag">Dom 2h</span></td><td><span class="tag g">âœ… Ativo</span></td></tr>
+    <tr><td><del>6</del></td><td><del>pre_follow_3min</del></td><td>â€”</td><td><span class="tag r">ðŸ—‘ï¸ Removido</span></td></tr>
+    <tr><td><del>7</del></td><td><del>pre_follow_10min</del></td><td>â€”</td><td><span class="tag r">ðŸ—‘ï¸ Removido</span></td></tr>
   </table></div>
   <div class="cb" style="margin-top:16px"><div class="ch"><span class="cl sql">zera-wait-expirado</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
 <pre><span class="kw">UPDATE</span> dados_cliente <span class="kw">SET</span> wait = <span class="num">0</span>
@@ -771,32 +772,32 @@ linhasOk   = msg.<span class="fn">split</span>(<span class="str">'\n'</span>).le
       > (wait + <span class="num">120000</span>);</pre></div>
 </div>
 
-<!-- ═══ TAB: REDIS ═══ -->
+<!-- â•â•â• TAB: REDIS â•â•â• -->
 <div class="panel" id="redis">
-  <div class="stitle"><span class="icon">⚡</span> Redis — Buffer Assíncrono <span class="line"></span></div>
+  <div class="stitle"><span class="icon">âš¡</span> Redis â€” Buffer AssÃ­ncrono <span class="line"></span></div>
   <div class="card" style="margin-bottom:16px">
-    <p style="font-size:.9rem;margin-bottom:12px">Redis acumula mensagens durante o <strong style="color:var(--c2)">Wait de 6 segundos</strong>, consolidando múltiplas mensagens rápidas em uma única resposta.</p>
+    <p style="font-size:.9rem;margin-bottom:12px">Redis acumula mensagens durante o <strong style="color:var(--c2)">Wait de 6 segundos</strong>, consolidando mÃºltiplas mensagens rÃ¡pidas em uma Ãºnica resposta.</p>
   </div>
   <div class="cb"><div class="ch"><span class="cl txt">Redis Flow</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-<pre>Merge Route → <span class="kw">Push</span> (Redis) → <span class="fn">Wait 6s</span> → <span class="kw">Get</span> (Redis) → <span class="kw">Delete</span> (Redis)
-    → IF (dedup: última msg = msg atual?)
-        ├─ <span class="str">True</span>  → Digitando (já processada)
-        └─ <span class="num">False</span> → <span class="fn">Join</span> (junta msgs) → To Briefing</pre></div>
+<pre>Merge Route â†’ <span class="kw">Push</span> (Redis) â†’ <span class="fn">Wait 6s</span> â†’ <span class="kw">Get</span> (Redis) â†’ <span class="kw">Delete</span> (Redis)
+    â†’ IF (dedup: Ãºltima msg = msg atual?)
+        â”œâ”€ <span class="str">True</span>  â†’ Digitando (jÃ¡ processada)
+        â””â”€ <span class="num">False</span> â†’ <span class="fn">Join</span> (junta msgs) â†’ To Briefing</pre></div>
 </div>
 
-<!-- ═══ TAB: OUTPUT ═══ -->
+<!-- â•â•â• TAB: OUTPUT â•â•â• -->
 <div class="panel" id="output">
-  <div class="stitle"><span class="icon">📤</span> Output & Envio <span class="line"></span></div>
+  <div class="stitle"><span class="icon">ðŸ“¤</span> Output & Envio <span class="line"></span></div>
   <div class="tw"><table>
-    <tr><th>Output</th><th>Condição</th><th>Destino</th></tr>
+    <tr><th>Output</th><th>CondiÃ§Ã£o</th><th>Destino</th></tr>
     <tr><td><span class="tag v">equipe</span></td><td><code>enviar_equipe && !enviar_cliente</code></td><td>Evolution API (canal equipe)</td></tr>
-    <tr><td><span class="tag y">audio</span></td><td><code>gerar_audio = true</code></td><td>Eleven Labs → Spliter</td></tr>
-    <tr><td><span class="tag g">cliente</span></td><td><code>enviar_cliente = true</code></td><td>Spliter → Loop → Evolution send</td></tr>
+    <tr><td><span class="tag y">audio</span></td><td><code>gerar_audio = true</code></td><td>Eleven Labs â†’ Spliter</td></tr>
+    <tr><td><span class="tag g">cliente</span></td><td><code>enviar_cliente = true</code></td><td>Spliter â†’ Loop â†’ Evolution send</td></tr>
   </table></div>
   <div class="cb" style="margin-top:16px"><div class="ch"><span class="cl txt">Loop de Envio</span><div class="dots"><i class="r"></i><i class="y"></i><i class="g"></i></div></div>
-<pre>Spliter (divide parágrafos, máx <span class="num">5</span>)
-  → Loop (SplitInBatches)
-    → <span class="fn">Wait 5min</span>
+<pre>Spliter (divide parÃ¡grafos, mÃ¡x <span class="num">5</span>)
+  â†’ Loop (SplitInBatches)
+    â†’ <span class="fn">Wait 5min</span>
     -> <span class="kw">Send</span> texto (Evolution API)
     -> Retry em falha (max 3)</pre></div>
   <div class="card-grid cols-3" style="margin-top:16px">
@@ -944,3 +945,4 @@ linhasOk   = msg.<span class="fn">split</span>(<span class="str">'\n'</span>).le
 </script>
 </body>
 </html>
+
